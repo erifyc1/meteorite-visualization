@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4f37b19ce24741c58dedfdf24dba02fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4f37b19ce24741c58dedfdf24dba02fd" ></div>
+        
+</body>
+<script>    
+    
+            var map_4f37b19ce24741c58dedfdf24dba02fd = L.map(
+                "map_4f37b19ce24741c58dedfdf24dba02fd",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+
+            
+
+        
+    
+            var tile_layer_0dc5eb1a7e1e437abfef6c60b19c8065 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+            var marker_3e05cc11af56425b97ee1ea153583e8a = L.marker(
+                [38.98333, 141.61667],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_869a6f59ae954996acc1a539a6a0be79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92334d25a3d6471b9509fde928808c8d = $(`<div id="html_92334d25a3d6471b9509fde928808c8d" style="width: 100.0%; height: 100.0%;">Name: Kesen Mass: 135000.0 Fall: Fell Lat: 38.98333 Long: 141.61667</div>`)[0];
+            popup_869a6f59ae954996acc1a539a6a0be79.setContent(html_92334d25a3d6471b9509fde928808c8d);
+        
+
+        marker_3e05cc11af56425b97ee1ea153583e8a.bindPopup(popup_869a6f59ae954996acc1a539a6a0be79)
+        ;
+
+        
+    
+    
+            var marker_06f01f9c408a447c8edf1646070f4774 = L.marker(
+                [23.1, 87.3],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_7b8a68c443df422594ed3a00ce229e98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_185926c817cf4d0082e5b97ef30b5ed9 = $(`<div id="html_185926c817cf4d0082e5b97ef30b5ed9" style="width: 100.0%; height: 100.0%;">Name: Shalka Mass: 4000.0 Fall: Fell Lat: 23.1 Long: 87.3</div>`)[0];
+            popup_7b8a68c443df422594ed3a00ce229e98.setContent(html_185926c817cf4d0082e5b97ef30b5ed9);
+        
+
+        marker_06f01f9c408a447c8edf1646070f4774.bindPopup(popup_7b8a68c443df422594ed3a00ce229e98)
+        ;
+
+        
+    
+    
+            var marker_7dad7b6ef25f4387a47b0e909bdbebea = L.marker(
+                [37.5, -79.75],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_3d2c6729cb3649b3a32bbbc85793350c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a07de033649421ca254b86d4b85164d = $(`<div id="html_9a07de033649421ca254b86d4b85164d" style="width: 100.0%; height: 100.0%;">Name: Botetourt County Mass: 500.0 Fall: Found Lat: 37.5 Long: -79.75</div>`)[0];
+            popup_3d2c6729cb3649b3a32bbbc85793350c.setContent(html_9a07de033649421ca254b86d4b85164d);
+        
+
+        marker_7dad7b6ef25f4387a47b0e909bdbebea.bindPopup(popup_3d2c6729cb3649b3a32bbbc85793350c)
+        ;
+
+        
+    
+    
+            var marker_2f0b940bd1a94d86b62fed220dff27ba = L.marker(
+                [40.43333, -80.0],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_ae776023c19042e0a6b8d8d8bc011a40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d17ea0bc2cb144b596963dc9fae7f09b = $(`<div id="html_d17ea0bc2cb144b596963dc9fae7f09b" style="width: 100.0%; height: 100.0%;">Name: Pittsburg Mass: 600.0 Fall: Found Lat: 40.43333 Long: -80.0</div>`)[0];
+            popup_ae776023c19042e0a6b8d8d8bc011a40.setContent(html_d17ea0bc2cb144b596963dc9fae7f09b);
+        
+
+        marker_2f0b940bd1a94d86b62fed220dff27ba.bindPopup(popup_ae776023c19042e0a6b8d8d8bc011a40)
+        ;
+
+        
+    
+    
+            var marker_119bc6fdef3449e2957e273317cb2221 = L.marker(
+                [37.95, -85.78333],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_4ca16657c8cd4bb2b29170a648c6d378 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a166a7d4db8144e7b7fdbda8a1ab95dd = $(`<div id="html_a166a7d4db8144e7b7fdbda8a1ab95dd" style="width: 100.0%; height: 100.0%;">Name: Salt River Mass: 3600.0 Fall: Found Lat: 37.95 Long: -85.78333</div>`)[0];
+            popup_4ca16657c8cd4bb2b29170a648c6d378.setContent(html_a166a7d4db8144e7b7fdbda8a1ab95dd);
+        
+
+        marker_119bc6fdef3449e2957e273317cb2221.bindPopup(popup_4ca16657c8cd4bb2b29170a648c6d378)
+        ;
+
+        
+    
+    
+            var marker_43d495d0247d431da26030a2a7e106fe = L.marker(
+                [53.4, 18.45],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_bcef453dde83446eade976e1b3b47db5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0807f1917e82451abf99be14e8a00410 = $(`<div id="html_0807f1917e82451abf99be14e8a00410" style="width: 100.0%; height: 100.0%;">Name: Schwetz Mass: 21500.0 Fall: Found Lat: 53.4 Long: 18.45</div>`)[0];
+            popup_bcef453dde83446eade976e1b3b47db5.setContent(html_0807f1917e82451abf99be14e8a00410);
+        
+
+        marker_43d495d0247d431da26030a2a7e106fe.bindPopup(popup_bcef453dde83446eade976e1b3b47db5)
+        ;
+
+        
+    
+    
+            var marker_9ce87e5b5f95475581941bd65068b75e = L.marker(
+                [42.91667, -76.78333],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_0263004d26b24b88af6f3a6433f9f9d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6bb5d8280484b1db23cb3f9a0560289 = $(`<div id="html_c6bb5d8280484b1db23cb3f9a0560289" style="width: 100.0%; height: 100.0%;">Name: Seneca Falls Mass: 4000.0 Fall: Found Lat: 42.91667 Long: -76.78333</div>`)[0];
+            popup_0263004d26b24b88af6f3a6433f9f9d2.setContent(html_c6bb5d8280484b1db23cb3f9a0560289);
+        
+
+        marker_9ce87e5b5f95475581941bd65068b75e.bindPopup(popup_0263004d26b24b88af6f3a6433f9f9d2)
+        ;
+
+        
+    
+    
+            var marker_7deaeceb4f1c43129d2cf40b4d5a4c07 = L.marker(
+                [31.85, -110.96667],
+                {}
+            ).addTo(map_4f37b19ce24741c58dedfdf24dba02fd);
+        
+    
+        var popup_eda41971554f41e4aa2f7fa6be8aba96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12daf72fffb4511a835409c172bd921 = $(`<div id="html_e12daf72fffb4511a835409c172bd921" style="width: 100.0%; height: 100.0%;">Name: Tucson Mass: 975000.0 Fall: Found Lat: 31.85 Long: -110.96667</div>`)[0];
+            popup_eda41971554f41e4aa2f7fa6be8aba96.setContent(html_e12daf72fffb4511a835409c172bd921);
+        
+
+        marker_7deaeceb4f1c43129d2cf40b4d5a4c07.bindPopup(popup_eda41971554f41e4aa2f7fa6be8aba96)
+        ;
+
+        
+    
+</script>
