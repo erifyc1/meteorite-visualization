@@ -5,7 +5,7 @@ from PIL import Image
 import plotly.express as px
 from IPython.display import display
 from folium.plugins import HeatMap
-from folium import plugins, Map, Marker
+from folium import plugins, Map, Marker, features, Icon
 from folium.plugins import HeatMap
 import webbrowser
 import os
@@ -50,7 +50,10 @@ map = Map(location=[0, 0], zoom_start=2, control_scale=True)
 
 # plot points using mask1
 for index, row in include.iterrows():
-    Marker([row["Latitude"], row["Longitude"]], popup = "Name: " + row["Name"] + " Mass: " + str(row["Mass"]) + " Fall: " + str(row["Fell"]) + " Lat: " + str(row["Latitude"]) + " Long: " + str(row["Longitude"]) ).add_to(map)
+    icon = features.CustomIcon("https://i.imgur.com/YCwSiQa.png", icon_size=(53.75,66.25)) # custom icon
+    Marker([row["Latitude"], row["Longitude"]],
+    popup = "Name: " + row["Name"] + " Mass: " + str(row["Mass"]) + " Fall: " + str(row["Fell"]) + " Lat: " + str(row["Latitude"]) + " Long: " + str(row["Longitude"]),
+    icon=icon ).add_to(map)
 
 # plot heatmap using mask2
 mask2 = mask2[['Latitude', 'Longitude']]
