@@ -3,7 +3,10 @@
 
 ## Introduction:
 
-Our project is a visualization of meteorite findings using multiple mediums and representations. With different perspectives on the visualization of this data, we hope to be able to draw new conclusions based on the patterns we find. </br>
+Our project is a visualization of meteorite findings using multiple mediums and representations. With different perspectives on the visualization of this data, we hope to be able to draw new conclusions based on the patterns we find.
+
+Video: https://youtu.be/p171Nv6yP4I
+</br>
 
 ## File Descriptions
 1. [interactive_map.py](interactive_map.py): Interactive Heat Map with overlaid meteorite info. User can input time period to analyze and minimum mass of meteorite for plot points on map
