@@ -3,17 +3,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from PIL import Image
 import plotly.express as px
-# import folium
-from folium.plugins import HeatMap
 from IPython.display import display
-import webbrowser
-import os
+from folium.plugins import HeatMap
 from folium import plugins, Map, Marker
 from folium.plugins import HeatMap
+import webbrowser
+import os
 
 
 
-# Clean Up Data Section
+# Clean Up Data
 
 meteorites = pd.read_csv("./data/meteorite-landings.csv", delimiter=",")
 # Rename columns
@@ -29,8 +28,10 @@ filtered_meteorites["Mass"] = filtered_meteorites["Mass"].div(1000) # convert gr
 filtered_meteorites.to_csv("./data/cleansed-data.csv")
 filtered_meteorites = filtered_meteorites.sort_values(by="Year", ascending=True)
 
-
+# open cleansed data file
 cleansed_meteorites = pd.read_csv("./data/cleansed-data.csv", delimiter=",")
+
+# input: time period for heatmap and minimum mass of meteorite for plot points
 start_year = int(input("Input start year: "))
 end_year = int(input("Input end year: "))
 min_mass = int(input("Minimum mass of meteorite points to plot (in kg): "))
@@ -46,15 +47,17 @@ mask2 = cleansed_meteorites[mask2]
 
 map = Map(location=[0, 0], zoom_start=2, control_scale=True)
 
+# plot points using mask1
 for index, row in include.iterrows():
     Marker([row["Latitude"], row["Longitude"]], popup = "Name: " + row["Name"] + " Mass: " + str(row["Mass"]) + " Fall: " + str(row["Fell"]) + " Lat: " + str(row["Latitude"]) + " Long: " + str(row["Longitude"]) ).add_to(map)
 
+# plot heatmap using mask2
 mask2 = mask2[['Latitude', 'Longitude']]
 # mask = mask.dropna(axis=0, subset=['Latitude','Longitude'])
 map_data = [[row['Latitude'],row['Longitude']] for index, row in mask2.iterrows()]
 HeatMap(map_data).add_to(map)
 
-
+# save map as html file and open in browser
 map.save("map.html")
 webbrowser.open("map.html")
 webbrowser.open('file://' + os.path.realpath("map.html")) # open file in default browser
