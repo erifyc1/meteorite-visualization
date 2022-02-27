@@ -13,7 +13,7 @@ Our project is a visualization of meteorite findings using multiple mediums and 
 5. [animation.html](images/animation.html): animation file output after running [animation.ipynb](animation.ipynb)
 6. [map.html](map.html): animation file output after running [interactive_map.py](interactive_map.py)
 
-### Authors
+## Authors
 1. Arhan Goyal
 2. Ben Guan
 3. Evan Coats
