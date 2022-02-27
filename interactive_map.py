@@ -47,6 +47,7 @@ mask2 = cleansed_meteorites[mask2]
 
 map = Map(location=[0, 0], zoom_start=2, control_scale=True)
 
+
 # plot points using mask1
 for index, row in include.iterrows():
     Marker([row["Latitude"], row["Longitude"]], popup = "Name: " + row["Name"] + " Mass: " + str(row["Mass"]) + " Fall: " + str(row["Fell"]) + " Lat: " + str(row["Latitude"]) + " Long: " + str(row["Longitude"]) ).add_to(map)
