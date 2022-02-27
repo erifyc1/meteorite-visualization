@@ -3,13 +3,11 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import pandas as pd
 import plotly.express as px
-# import folium
+import folium
 from folium.plugins import HeatMap
 from IPython.display import display
 import webbrowser
 import os
-from folium import plugins, Map
-from folium.plugins import HeatMap
 
 
 cleansed_meteorites = pd.read_csv("./data/cleansed-data.csv", delimiter=",")
@@ -24,13 +22,10 @@ mask = (cleansed_meteorites["Year"] >= start_year) & (cleansed_meteorites["Year"
 include = cleansed_meteorites[mask]
 
 
-map = Map(location=[0, 0], zoom_start=2, control_scale=True)
+map = folium.Map(location=[0, 0], zoom_start=2, control_scale=True)
 
-# for index, row in include.iterrows():
-#     folium.Marker([row["Latitude"], row["Longitude"]], popup = "Name: " + row["Name"] + " Mass: " + str(row["Mass"]) + " Fall: " + str(row["Fell"]) + " Lat: " + str(row["Latitude"]) + " Long: " + str(row["Longitude"]) ).add_to(map)
-
-map_data = [[row['Latitude'],row['Longitude']] for index, row in mask.iterrows()]
-HeatMap(map_data).add_to(map)
+for index, row in include.iterrows():
+    folium.Marker([row["Latitude"], row["Longitude"]], popup = "Name: " + row["Name"] + " Mass: " + str(row["Mass"]) + " Fall: " + str(row["Fell"]) + " Lat: " + str(row["Latitude"]) + " Long: " + str(row["Longitude"]) ).add_to(map)
 
 
 map.save("map.html")
