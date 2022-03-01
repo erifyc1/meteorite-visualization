@@ -1,5 +1,4 @@
-# Meteorite Visualization
-# HackIllinois 2022
+# Meteorite Visualization (HackIllinois 2022)
 
 ## Introduction:
 
