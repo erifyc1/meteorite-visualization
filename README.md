@@ -17,8 +17,8 @@ Our struggles during this project mostly consisted of us trying to learn new pac
 2. [animation.ipynb](animation.ipynb): Animation of meteorites found over time, color and size of points scaled by mass
 3. [misc_visualization.ipynb](misc_visualization.ipynb): Several basic visualizations
 4. [metrics.ipynb](metrics.ipynb): Visualizations based on class of meteorite
-5. [animation.html](images/animation.html): animation file output after running [animation.ipynb](animation.ipynb)
-6. [map.html](map.html): animation file output after running [interactive_map.py](interactive_map.py)
+5. [animation.html](output/animation.html): animation file output after running [animation.ipynb](animation.ipynb)
+6. [map.html](output/map.html): animation file output after running [interactive_map.py](interactive_map.py)
 
 ## Authors
 1. Arhan Goyal
