@@ -62,6 +62,6 @@ map_data = [[row['Latitude'],row['Longitude']] for index, row in mask2.iterrows(
 HeatMap(map_data).add_to(map)
 
 # save map as html file and open in browser
-map.save("map.html")
-webbrowser.open("map.html")
-webbrowser.open('file://' + os.path.realpath("map.html")) # open file in default browser
+map.save("/output/map.html")
+webbrowser.open("/output/map.html")
+webbrowser.open('file://' + os.path.realpath("/output/map.html")) # open file in default browser
