@@ -1,5 +1,7 @@
 # Meteorite Visualization (HackIllinois 2022)
 
+![img](https://imgur.com/a/1h5uVco)
+
 ## Introduction:
 
 Video: https://youtu.be/p171Nv6yP4I </br>
